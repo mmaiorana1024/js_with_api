@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/85bae2cb2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/theme.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Harry Potter Characters</title>
+  </head>
+  <body>
+    <main class="site-wrapper">
+      
+      <!-- Hero Section  -->
+      <section class="hero-bg">
+        <div class="container">
+          <div class="hero-content">
+            <div class="code-icon">
+              <i class="fa-solid fa-hat-wizard"></i>
+            </div>
+            <h2 class="header-lg">" YER A WIZARD, HARRY. "</h2>
+            <div class="sub-header">—Rubeus Hagrid</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section class="portfolio-section">
+        <!-- <div class="container search-container"> -->
+
+        <div class="btn-container">
+          <button class="sort-btn" type="button" data-sortdir="asc">
+            Sort Names A-Z
+          </button>
+          <button class="sort-btn" type="button" data-sortdir="desc">
+            Sort Names Z-A
+          </button>
+        </div>
+        <!-- </div> -->
+        <div id="favs" class="portfolio-grid"></div>
+        <ul class="portfolio-filter-nav ul-defaults-none">
+          <li class="filter-link" data-filter="all"># of Favorites by House</li>
+          <li class="filter-link" data-filter="gryffindor">
+            Gryffindor<span id="gryffindor"></span>
+          </li>
+          <li class="filter-link" data-filter="hufflepuff">
+            Hufflepuff<span id="hufflepuff"></span>
+          </li>
+          <li class="filter-link" data-filter="ravenclaw">
+            Ravenclaw<span id="ravenclaw"></span>
+          </li>
+          <li class="filter-link" data-filter="slytherin">
+            Slytherin<span id="slytherin"></span>
+          </li>
+        </ul>
+        <div id="main" class="portfolio-grid"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+.hero-content {
+  text-align: center;
+ padding-bottom: 4rem;
+}
+
+.code-icon {
+  color: var(--color-text);
+  padding: 1.25rem 1.5rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.code-icon .fa-hat-wizard {
+  font-size: 4rem;
+  display: inline-block;
+  line-height: 1.5;
+  color:#495fefe6;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-container .sort-btn {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  text-decoration: underline;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 1rem 0 1rem;
+  justify-content: center;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.portfolio-filter-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 2rem  0;
+  justify-content: center;
+}
+
+.portfolio-filter-nav .filter-link,
+.sort-btn {
+  padding: 0 1rem;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  letter-spacing: 1.63px;
+  font-weight: 700;
+}
+
+.portfolio-filter-nav .filter-link:hover {
+  cursor: pointer;
+}
+
+.portfolio-filter-nav .filter-link.active {
+  color: #495fef;
+}
+
+.portfolio-card {
+  position: relative;
+  margin: 0 1rem 1.85rem;
+  width: 255px;
+}
+
+.card-body img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-popup-box {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  transition: 0.4s;
+  z-index: 1;
+  padding: 1.25rem 1.875rem;
+  opacity: 0;
+}
+
+.card-popup-box:before {
+  position: absolute;
+  content: "";
+  background: var(--bg);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.9;
+  border-radius: 8px;
+}
+
+.portfolio-card:hover .card-popup-box {
+  bottom: 20px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card-popup-box div {
+  color: var(--color-text-opacity);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.63;
+  letter-spacing: 1.63px;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.card-popup-box h3 {
+  pointer-events: none;
+  color: var(--color-headings);
+  font-size: 1.3125rem;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.card-popup-box .favorite-icon {
+  text-align: right;
+}
+
+.favorite-icon .fa-heart {
+  font-size: 1.25rem;
+}
+
+.favorite-icon .fa-solid{
+  color: red;
+}
